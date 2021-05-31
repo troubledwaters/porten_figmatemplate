@@ -32,13 +32,14 @@ gulp.task('html', function buildHTML() {
         .pipe(gulp.dest('src'))
 });
 
-gulp.task('assets', function () {
+gulp.task('assets', function(){
     return (
         gulp.src(['src/assets/**', '!src/assets/**/*.pug'], { since: gulp.lastRun('assets') })
             .pipe(gulp.dest('public'))
 
     )
 });
+
 
 gulp.task('js', function () {
     return (
@@ -50,6 +51,7 @@ gulp.task('js', function () {
 });
 
 gulp.task('watch', function () {
+    gulp.watch('src/assets/**/*.pug', gulp.series('html'))
     gulp.watch('src/styles/**/*.*', gulp.series('styles'))
     gulp.watch('src/assets/**/*.*', gulp.series('assets'))
     gulp.watch('src/js/**/*.*', gulp.series('js'))
