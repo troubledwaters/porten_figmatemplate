@@ -5,9 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+
+    div.container-fluid.header__container
+        div.row.header__row.min-row
+            div.col-lg-8.col-md-12.header__contacts__col
+                i.header__contacts-icon.contacts-icon
+                    img(src="img/i_phone.svg" alt="Телефон")
+                span.header__contacts-info
+                    |&emsp;
+                    a.header__contacts-info__phone(href="tel:88121234567")
+                        |8 (812) 123-45-67
+                    |&emsp;|&emsp;Работаем&nbsp;7&nbsp;дней&nbsp;в&nbsp;неделю&emsp;&shy;|&emsp;9:00&nbsp;—&nbsp;18:00  
+            div.col-lg-4.col-md-12.header__sign__col
+                i.header__sign-icon.contacts-icon
+                    img(src="img/i_door.svg" alt="Регистрация")
+                a(href='#').header__sign-link
+                    |&emsp;Войти &emsp;/&emsp; Регистрация
+    div.container-fluid.menu__container-descktop
+        div.row.menu__row-descktop.min-row
+            div.col.menu-item__col-logo.menu__logo
+                img(src="img/logo.svg" alt="Porten")
+            div.col-lg-2.menu-item__col.menu-item__likes
+                |Понравилось
+            div.col-lg-2.menu-item__col.menu-item__personal-area
+                |Личный кабинет
+            div.col-lg-2.menu-item__col.menu-item__settings
+                |Настройки
+            a.col-lg-1.menu-item__col.menu-item__shopping 
+                i.menu-item__shopping-icon
+                    img(src="img/i_shopping.svg" alt="Корзина")
+            a.col-lg-1.menu-item__col.menu-item__search
+                i.menu-item__shopping-icon
+                    img(src="img/i_search.svg" alt="Поиск")
+    div.container-fluid.menu__container-mobile
+        div.row.menu__row-mobile
+            div.col.menu-item__col-logo.menu__logo
+                img(src="img/logo.svg" alt="Porten")
+            div.col.menu__col-mobile
+                <button class="menu__btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <i class="fas fa-bars"></i>     
+                </button>
+                <div class="offcanvas offcanvas-end right-menu__wrapper" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        //- <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                        <button type="button" class="btn-close text-reset menu__btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    div.offcanvas-body
+                        div.list-group.menu-list
+                            a.list-group-item.menu-list__item(href="#")
+                                |Понравилось
+                            a.list-group-item.menu-list__item(href="#")
+                                |Личный кабинет
+                            a.list-group-item.menu-list__item(href="#")
+                                |Настройки
+                            a.list-group-item.menu-list__item(href="#")
+                                |Корзина
+                            a.list-group-item.menu-list__item(href="#")
+                                |Поиск
+                    </div>
+
     div.container-fluid.main-img__container
         div.row.main-img__row
             div.col-12.main-img__col.d-flex.justify-content-center.align-items-center.flex-column
@@ -18,7 +79,7 @@
     div.container-fluid.collection__container
         div.row.collection-new__row
             div.col-12.col-xl-6.collection__new-season__col
-                div.collection__new-season__header
+                div.collection__new-season__header.main_header
                     |СЕЗОН 2020/21
                 hr.collection__new-season__line.line
                 div.container-fluid.new-season__goods__container
@@ -46,7 +107,7 @@
                                 |165 000 руб.
             div.col-12.col-xl-6.collection__new-collection__col
                 div.collection__new-collection__img
-                    div.collection__new-collection__header
+                    div.collection__new-collection__header.main_header
                         |Новая коллекция
                     hr.collection__new-collection__line.line
                     button.collection__new-collection__btn.main-btn
@@ -56,13 +117,62 @@
             div.col-12.col-xl-6.collection__2018-collection__col
                 div.collection__2018-collection__img
             div.col-12.col-xl-6.collection__2018-collection__description
-                div.collection__2018-collection__header
+                div.collection__2018-collection__header.main_header
                     |Коллекция 2018
                 hr.collection__new-collection__line.line
                 div.collection__2018-collection__info
                     |Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non rutrum ornare ut mattis habitant dui arcu. Sagittis amet nunc ut neque quis nibh arcu. Vivamus vestibulum nisi et venenatis sed scelerisque magna consectetur. Amet convallis quis gravida facilisis vulputate. Faucibus facilisi habitasse ipsum interdum dictum aliquet. Velit quis ullamcorper pulvinar nulla malesuada integer. Aenean praesent viverra nulla nullam natoque volutpat curabitur auctor. Viverra viverra ullamcorper scelerisque risus dignissim egestas. Id aliquam a aliquam egestas leo orci pharetra sed diam. 
                 button.collection__2018-collection__btn.main-btn
                     |Посмотреть коллекцию
+    div.container-fluid.brends__container.d-flex.align-items-center
+        div.row.brends__row.w-100
+            div.col-12.brends__col
+                div.brends__header.main_header
+                    |Наши бренды
+                hr.brends__line.line
+                div.brends__imgs.min-wrapper
+                    div.container-fluid.brends__imgs__container
+                        div.row.brends__imgs__row
+                            div.col-xxl-3.col-xl-6.col-lg-6.col-md-12.brends__imgs_col
+                                img(src="img/img_5.png" alt="Бренд-1")
+                            div.col-xxl-3.col-xl-6.col-lg-6.col-md-12.brends__imgs_col
+                                img(src="img/img_5.png" alt="Бренд-1")
+                            div.col-xxl-3.col-xl-6.col-lg-6.col-md-12.brends__imgs_col
+                                img(src="img/img_5.png" alt="Бренд-1")
+                            div.col-xxl-3.col-xl-6.col-lg-6.col-md-12.brends__imgs_col
+                                img(src="img/img_5.png" alt="Бренд-1")
+    div.container-fluid.footer__container.d-flex.align-items-center
+        div.row.footer__row.min-row
+            div.col-xxl-4.col-xl-6.footer__col.footer__about
+                div.footer__about-header.footer-header
+                    |О магазине
+                div.footer__about-info.footer-info
+                    |Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor lectus nunc nulla nibh. Egestas amet consectetur vel vitae aliquam dictum suspendisse. Lobortis eget consequat, tellus et et sed turpis. Pretium quisque vitae, amet, porttitor odio ultricies massa pharetra leo. Et ipsum urna fames in sit mi ultrices nisi, nunc.
+            div.col-xxl-4.col-xl-6.footer__col.footer__categories
+                div.footer__categories-header.footer-header
+                    |Категории
+                div.footer__categories__list
+                    div.footer__categories__list-item
+                        |часы
+                    div.footer__categories__list-item
+                        |браслеты
+                    div.footer__categories__list-item
+                        |ремни
+                    div.footer__categories__list-item
+                        |ювелирные изделия
+                    div.footer__categories__list-item
+                        |запонки
+            div.col-xxl-4.col-xl-6.footer__col.footer__letters
+                div.footer__letters-header.footer-header
+                    |Рассылка
+                div.footer__letters-info.footer-info
+                    |Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor lectus nunc nulla nibh.
+                div.footer__letters-form
+                    <input type="email" class="footer__letters-form__input" placeholder="Ваша почта">
+                    button.footer__letters-form__btn.main-btn
+                        |Подписаться
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
 </body>
