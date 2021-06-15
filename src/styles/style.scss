@@ -12,16 +12,20 @@ body {
 
 }
 
-.container {
-    border: 2px solid aquamarine;
-}
+// .container {
+//     border: 2px solid aquamarine;
+// }
 
-.row {
-    border: 2px solid plum
-}
+// .row {
+//     border: 2px solid plum
+// }
 
-[class^="col"] {
-    border: 2px solid brown;
+// [class^="col"] {
+//     border: 2px solid brown;
+// }
+
+.main-img__container{
+    padding: 0;
 }
 
 .main-img__col {
@@ -129,7 +133,7 @@ body {
 
 
 .collection__new-season__col {
-    padding: 5.8rem 0;
+    padding: 5.8rem 0 3rem;
 }
 
 
@@ -180,11 +184,22 @@ body {
 }
 
 .new-season__goods__item__name {
+    font-family: "PlayfairDisplay";
+    font-size: 1.125rem;
+    font-weight: 400;
     margin-bottom: 0.6rem;
+    margin-top: 1.5rem;
 }
 
 .new-season__goods__item__price {
-    margin: 0;
+    font-family: "PlayfairDisplay";
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+
+.collection__container{
+    padding: 0;
 }
 
 .collection__2018-collection__col {
@@ -243,6 +258,7 @@ body {
 }
 
 .brends__container {
+    background-color: #0F0F0F;
     padding: 0;
     min-height: 20rem;
 }
@@ -256,6 +272,10 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding: 0;
+}
+
+.brends__imgs__container{
     padding: 0;
 }
 
@@ -278,6 +298,11 @@ body {
     }
 }
 
+.header__container{
+    padding: 0;
+}
+
+
 .header__contacts-info {
     color: #969696;
     font-family: "PTSans";
@@ -287,6 +312,7 @@ body {
 
 .header__contacts-info__phone{
     color: #969696;
+    text-decoration: none
 }
 
 .header__contacts-info__phone:focus, .header__contacts-info__phone:hover{
@@ -347,6 +373,7 @@ body {
 
 
 .menu__container-descktop{
+    padding: 0;
     background-color: #0F0F0F;
 }
 
@@ -381,6 +408,10 @@ body {
 
 .menu-item__shopping, .menu-item__search{
     max-width: 3rem;
+}
+
+.menu__container-mobile{
+    padding: 0;
 }
 
 @media (max-width: 991.98px){
@@ -447,6 +478,10 @@ body {
     min-height: 25rem;
     padding: 5rem 0;
     margin: 0;
+}
+
+.footer__row{
+    margin:0;
 }
 
 .footer-header{
@@ -529,3 +564,25 @@ body {
         display: block;
     }
 }
+
+
+.new-arrivals__container{
+    padding: 7.5rem 0 9.3rem;
+}
+
+.new-arrivals__row{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.new-arrivals__line{
+    margin:2.5rem 0;
+}
+
+.new-arrivals-items__container{
+    padding: 0;
+}
+
